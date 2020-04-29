@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title> FOODUKO-Categories </title>
+        <link rel="stylesheet"  href="style_categories.css">
+
+    <script type="text/javascript">
+        function toggle(){
+            var head = document.getElementById("header")
+            head.classList.toggle('active')
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <header id="header">
+        <a href="index.html" class="logo"> FOODUKO </a>
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="Categories.html"> Categories </a></li>
+            <li><a href="FoodFacts.html"> FoodFacts </a></li>
+            <li><a href="Recipes.html"> Recipes </a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+    <section class="info">
+        <div class="contentbox">
+            <h2 class="heading"> Categories </h2>
+            <p class="ptext">
+                Food can be classified differently according to different personel views. 
+                We have classified food here based on the two very main broader categories.
+            </p>
+            <br>
+            <ul style="list-style: none;">
+                <li class="category"> 
+                    <a href="#"> 
+                        <p> Veg </p>
+                        <br>
+                        <img class="vegImg" src="Veg_Categories.jpg" >
+                    </a>
+                </li>
+                <br>
+                <li class="category">
+                    <a href="#"> 
+                        <p> Non-Veg </p>
+                        <br>
+                        <img class="nonvegImg" src="Non Veg_Categories.jpg" > 
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+    </section>  
+    
+
+</body>
+</html>
