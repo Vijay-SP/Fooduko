@@ -104,6 +104,14 @@ header ul li a{
 .category a p {
     font-size: 30px;
 }
+
+.Paneer{
+    font-size: 30px;
+}
+
+.Paneer_recipes{
+    font-size: 20px;
+}
 @media( max-width:991px){
     header ul{
         position: absolute;
@@ -195,6 +203,14 @@ header ul li a{
 
     .category a p{
         font-size: 25px;
+    }
+
+    .Paneer{
+        font-size: 25px;
+    }
+    
+    .Paneer_recipes{
+        font-size: 15px;
     }
 }
 
