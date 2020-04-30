@@ -105,11 +105,11 @@ header ul li a{
     font-size: 30px;
 }
 
-.Paneer{
+.sub-category{
     font-size: 30px;
 }
 
-.Paneer_recipes{
+.sub-category_recipe{
     font-size: 20px;
 }
 @media( max-width:991px){
@@ -205,11 +205,11 @@ header ul li a{
         font-size: 25px;
     }
 
-    .Paneer{
+    .sub-category{
         font-size: 25px;
     }
     
-    .Paneer_recipes{
+    .sub-category_recipe{
         font-size: 15px;
     }
 }

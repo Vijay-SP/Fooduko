@@ -95,6 +95,14 @@ header ul li a{
     box-shadow: 5px 5px 15px black;
 }
 
+.sub-category{
+    font-size: 30px;
+}
+
+.sub-category_recipe{
+    font-size: 20px;
+}
+
 @media( max-width:991px){
     header ul{
         position: absolute;
@@ -179,5 +187,12 @@ header ul li a{
     .image{
         width: 250px;
         height: 175px;
+    }
+    .sub-category_recipe{
+        font-size: 25px;
+    }
+    
+    .sub-category_recipe{
+        font-size: 15px;
     }
 }
