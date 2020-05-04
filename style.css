@@ -124,7 +124,7 @@ header ul li a{
 
 .about .imagebox{
     margin-top:5px;
-    background: url(Mocktail.jpg);
+    background: url(Images/Mocktail.jpg);
     width: 50%;
     background-size: cover;
     background-position: center;
@@ -211,6 +211,39 @@ header ul li a{
     font-style: italic;
     font-size: 20px;
 }
+
+.connect{
+    background:black;
+    padding: 50px;
+    text-align: center;   
+}
+
+.connect .imagebox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top:40px;
+}
+
+.connect .imagebox img{
+    max-width: 200  px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.connect .imagebox img:hover{
+    opacity: 1;
+}
+    
+.zomato{
+    padding-top:30px;
+}
+
+.foodpanda{
+    padding-top: 50px;
+}
+
+
+
 
 .aboutus{
     background:black;
