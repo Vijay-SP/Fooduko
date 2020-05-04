@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
 }
+
 header{
     position: fixed;
     top: 0;
@@ -65,7 +70,6 @@ header ul li a{
     position: relative;
     width: 100%;
     display: flex;
-    background:rgb(83, 55, 243);
 }
 .info .contentbox{
     margin-top:5px;
