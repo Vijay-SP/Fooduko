@@ -98,7 +98,15 @@ header ul li a{
     box-shadow: 5px 5px 10px black;
 }
 
+.sub-category{
+    font-size: 30px;
+    list-style: disc;
+}
 
+.sub-category_recipe{
+    font-size: 20px;
+    list-style: none;
+}
 
 @media( max-width:991px){
     header ul{

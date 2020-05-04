@@ -107,10 +107,12 @@ header ul li a{
 
 .sub-category{
     font-size: 30px;
+    list-style: disc;
 }
 
 .sub-category_recipe{
     font-size: 20px;
+    list-style: none;
 }
 @media( max-width:991px){
     header ul{
