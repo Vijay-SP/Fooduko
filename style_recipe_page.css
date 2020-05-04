@@ -90,7 +90,7 @@ header ul li a{
 }
 
 .image{
-    width: 400px;
+    width: 500px;
     height: 300px;
     box-shadow: 5px 5px 15px black;
 }
@@ -185,7 +185,7 @@ header ul li a{
         width: 100%;
     }
     .image{
-        width: 250px;
+        width: 280px;
         height: 175px;
     }
     .sub-category_recipe{
