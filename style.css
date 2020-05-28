@@ -95,6 +95,8 @@ header ul li a{
 .terms{
     text-align: right;
     padding:0;
+    border: 2px solid blue;
+    border-radius: 8px;
 }
 
 .terms a{
