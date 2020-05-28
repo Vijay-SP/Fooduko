@@ -100,10 +100,9 @@ header ul li a{
 }
 
 .terms a{
-    text-decoration: underline;
     color: #fff;
-    border: 2px solid green;
-    border-radius: 7px;
+    border: 2px solid ;
+    border-radius: 5px;
 }
 
 
