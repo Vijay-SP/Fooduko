@@ -94,7 +94,7 @@ header ul li a{
 
 .terms{
     text-align: right;
-    padding:5px 5px 5px 5px;
+    padding:0;
     justify-content: space-around;
 }
 
@@ -103,6 +103,7 @@ header ul li a{
     color: #fff;
     border: 2px solid ;
     border-radius: 5px;
+    padding: 0em 1em;
 }
 
 
