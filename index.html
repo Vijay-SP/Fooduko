@@ -12,6 +12,7 @@
     <meta charset="UTF-8">
     <title> FOODUKO-Food </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aos.css">
     <link rel="icon" type="image/ico" href="Images/Foodukologo.jpg">
     <script type="text/javascript">
         function toggle() {
@@ -84,7 +85,7 @@
 
         <div class="container">
             <a href="Veg.html">
-                <div class="categorybox">
+                <div class="categorybox" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="400">
                     <div>
                         <img src="Images/Marharaja-Thali-cover-photo-1.jpg">
                         <h2> Vegetarian </h2>
@@ -93,7 +94,7 @@
             </a>
 
             <a href="Nonveg.html">
-                <div class="categorybox">
+                <div class="categorybox" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="400">
                     <div>
                         <img src="Images/Non Veg.jpg">
                         <h2> Non Vegetarian</h2>
@@ -102,7 +103,7 @@
             </a>
 
             <a href="Editors choice.html">
-                <div class="categorybox">
+                <div class="categorybox" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="400">
                     <div>
                         <img src="Images/Vada Pav.jpg">
                         <h2> Quarantine Special </h2>
@@ -186,7 +187,10 @@
         <div class="terms"><a href="Terms & Conditions.html">Terms & Conditions</a></div>
 
     </section>
-
+<script type="text/javascript" src="aos.js"></script>
+<script type="text/javascript">
+    AOS.init();
+</script>    
 </body>
 
 </html>
