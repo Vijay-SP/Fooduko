@@ -95,12 +95,14 @@ header ul li a{
 .terms{
     text-align: right;
     padding:0;
+    padding-left:0;
+    justify-content: space-around;
 }
 
 .terms a{
     text-decoration: underline;
     color: #fff;
-    border: 2px solid white;
+    border: 2px solid green;
     border-radius: 7px;
 }
 
