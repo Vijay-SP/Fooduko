@@ -226,6 +226,7 @@ header ul li a{
     margin-top: 50px;
     justify-content: center;
     text-align: left;
+    border-radius:15px;
 }
 .testimonials .container .contentbox p{
     font-style: italic;
