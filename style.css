@@ -104,8 +104,12 @@ header ul li a{
     border: 2px solid ;
     border-radius: 5px;
     padding: 0em 1em;
+    transition: 0.3s;
 }
 
+.terms a:active{
+    background-color: cyan;
+}    
 
 .text{
     color: #fff;
