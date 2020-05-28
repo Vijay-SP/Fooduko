@@ -420,4 +420,10 @@ header ul li a{
     .testimonials .container .contentbox p{
         font-size: 15px;
     }
+    
+    .terms{
+		margin: 0;
+		position: absolute;
+        left:30%;
+	}
 }
