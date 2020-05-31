@@ -107,14 +107,16 @@ header ul li a{
 .sub-category_recipe{
     font-size: 20px;
     list-style: none;
+}
+
+.sub-category_recipe li{
     border: 2px solid ;
     border-radius: 5px;
     padding: 0em 1em;
     transition: 0.3s;
 }
-
-.sub-category_recipe :active{
-    background-color: orange;
+.sub-category_recipe li:active{
+    background-color: cyan;
 }
 
 @media( max-width:991px){
