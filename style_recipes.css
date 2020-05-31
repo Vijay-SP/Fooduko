@@ -101,11 +101,20 @@ header ul li a{
 .sub-category{
     font-size: 30px;
     list-style: disc;
+    justify-content: space-around;
 }
 
 .sub-category_recipe{
     font-size: 20px;
     list-style: none;
+    border: 2px solid ;
+    border-radius: 5px;
+    padding: 0em 1em;
+    transition: 0.3s;
+}
+
+.sub-category_recipe :active{
+    background-color: orange;
 }
 
 @media( max-width:991px){
