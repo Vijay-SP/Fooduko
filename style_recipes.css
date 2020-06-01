@@ -298,7 +298,12 @@ header ul li a{
         bottom: 14px;
         transform: rotate(-45deg);
     }
-
+	
+    veg-logo{
+	height: 30px;
+	width: 30px;
+	margin-left: 2px;
+        }
 }
 
 @media( max-width:575px){
