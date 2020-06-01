@@ -117,6 +117,7 @@ header ul li a{
 	position: relative;
 	text-decoration: none;
 	overflow: hidden;
+	color: green;
 	transition: 0.5s;
 	padding: 5px 10px;
 	display: inline-block;
