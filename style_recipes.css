@@ -312,8 +312,15 @@ header ul li a{
     .info .contentbox{
         width: 100%;
     }
+	
     .cookImg{
         width: 320px;
         height: 205px;
-    }
+	}
+	
+    veg-logo{
+	height: 35px;
+	width: 35px;
+	margin-left: 5px;
+        }
 }
