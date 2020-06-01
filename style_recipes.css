@@ -100,24 +100,125 @@ header ul li a{
 
 .sub-category{
     font-size: 30px;
-    list-style: disc;
+	display: flex;
 }
 
+.sub-category a{
+	position: relative;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.5s;
+	padding: 5px 10px;
+	display: inline-block;
+	
+}
 .sub-category_recipe{
     font-size: 20px;
     list-style: none;
-    padding:0;
-    justify-content: space-around;
 }
 
 .sub-category_recipe li{
-    border: 2px solid ;
-    border-radius: 5px;
-    padding: 0em 1em;
-    transition: 0.3s;
+	margin:40px 0 0 0;
 }
-.sub-category_recipe li:active{
-    background-color: cyan;
+
+.sub-category a span:nth-child(1){
+	filter: hue-rotate(290deg);
+}
+
+.sub-category a span:nth-child(3){
+	filter: hue-rotate(190deg);
+}
+
+.sub-category a:hover{
+	background:#03e9f4;
+	color:#050801;
+	box-shadow: 0 0 5px #03e9f4,
+	            0 0 25px #03e9f4,
+				0 0 50px #03e9f4,
+				0 0 200px #03e9f4;
+}
+.sub-category_recipe a span{
+	position: absolute;
+	display: block;
+}
+
+.sub-category a span:nth-child(1)
+{
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#03e9f4);
+	animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1{
+	0%{
+		left: -100%;
+	}
+	50%,100%{
+		left: 100%; 
+	}
+}
+
+.sub-category a span:nth-child(2)
+{
+	top: 100%;
+	right: 0%;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#03e9f4);
+	animation: animate2 1s linear infinite;
+	animation-delay: 0.25s;
+}
+
+@keyframes animate2{
+	0%{
+		top: -100%;
+	}
+	50%,100%{
+		top: 100%; 
+	}
+}
+
+.sub-category a span:nth-child(3)
+{
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#03e9f4);
+	animation: animate3 1s linear infinite;
+	animation-delay: 0.5s;
+}
+
+@keyframes animate3{
+	0%{
+		right: -100%;
+	}
+	50%,100%{
+		right: 100%; 
+	}
+}
+
+.sub-category a span:nth-child(4)
+{
+	bottom: -100%;
+	left: 0%;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#03e9f4);
+	animation: animate4 1s linear infinite;
+	animation-delay: 0.75s;
+}
+
+@keyframes animate4{
+	0%{
+		bottom: -100%;
+	}
+	50%,100%{
+		bottom: 100%; 
+	}
 }
 
 @media( max-width:991px){
