@@ -79,6 +79,16 @@ header ul li a{
     width: 80%;
 }
 
+.vegetarians{
+	display: flex;
+}
+
+.veg-logo{
+	height:50px;
+	width: 50px;
+	margin-left: 20px;
+}
+
 .heading{
     color: #111;
     font-size: 30px;
