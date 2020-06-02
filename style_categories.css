@@ -306,7 +306,10 @@ h2{
         bottom: 14px;
         transform: rotate(-45deg);
     }
-
+    .category-veg a {
+	margin:100px 30px;
+	padding:5px 15px;
+	}
 }
 
 
@@ -339,6 +342,10 @@ h2{
     .sub-category_recipe{
         font-size: 15px;
     }
+    .category-veg a {
+	margin:100px 30px;
+	padding:5px 10px;
+     }
 }
 
 
