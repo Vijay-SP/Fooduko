@@ -1,5 +1,7 @@
 import 'package:Fooduko/constants.dart';
+import 'package:Fooduko/screens/home_screen.dart';
 import 'package:Fooduko/screens/login_screen.dart';
+import 'package:Fooduko/screens/signup_screen.dart';
 import 'package:Fooduko/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'screens/welcome_screen.dart';
@@ -12,13 +14,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        // fontFamily: "Poppins",
+         fontFamily: "Poppins",
         primaryColor: kPrimaryColor,
       ),
-      initialRoute: WelcomePage.id,
+      initialRoute: WelcomeScreen.id,
       routes: {
-        WelcomePage.id: (context) => WelcomePage(),
+        WelcomeScreen.id: (context) => WelcomeScreen(),
         LoginScreen.id: (context) => LoginScreen(),
+        SignupScreen.id: (context) => SignupScreen(),
+        HomeScreen.id: (context) => HomeScreen(),
       },
     );
   }
