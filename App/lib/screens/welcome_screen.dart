@@ -23,6 +23,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
 // Text "FOODUKO "
               Text(
@@ -30,7 +31,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 55,
-                  fontFamily: "Piedra",
+                  fontFamily: "ArchitectsDaughter",
                   letterSpacing: 3.0,
                 ),
               ),
@@ -71,7 +72,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     elevation: 10.0,
                     child: Text(
                       "Login",
-                      style: TextStyle(color: Colors.blue[900], fontSize: 20.0),
+                      style: TextStyle(
+                        color: Colors.blue[900],
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                     color: Colors.white,
                     shape: RoundedRectangleBorder(
@@ -92,7 +97,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     elevation: 10.0,
                     child: Text(
                       "Sign Up",
-                      style: TextStyle(color: Colors.blue[900], fontSize: 20.0,),
+                      style: TextStyle(
+                        color: Colors.blue[900],
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                     color: Colors.white,
                     shape: RoundedRectangleBorder(

@@ -1,5 +1,6 @@
-import 'package:Fooduko/screens/home_screen.dart';
+import 'package:fooduko/screens/home_screen.dart';
 import 'package:flutter/material.dart';
+
 class LoginScreen extends StatelessWidget {
   static const String id = "login_screen";
 
@@ -9,8 +10,6 @@ class LoginScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-
-
           Flexible(
             child: Text(
               'Log In',
@@ -58,7 +57,7 @@ class LoginScreen extends StatelessWidget {
                 hintText: 'FoodWithFooduko@gmail.com',
                 hintStyle: TextStyle(fontSize: 15),
                 contentPadding:
-                EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                    EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(32.0)),
                 ),
@@ -85,7 +84,6 @@ class LoginScreen extends StatelessWidget {
               right: 25.0,
             ),
             child: TextField(
-
               obscureText: true,
               keyboardType: TextInputType.visiblePassword,
               textAlign: TextAlign.center,
@@ -101,7 +99,7 @@ class LoginScreen extends StatelessWidget {
                 hintText: 'Type your Password here',
                 hintStyle: TextStyle(fontSize: 15),
                 contentPadding:
-                EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                    EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(32.0)),
                 ),
@@ -123,21 +121,22 @@ class LoginScreen extends StatelessWidget {
 
 // Login Button
           ButtonTheme(
-
             minWidth: 150.0,
             height: 50.0,
             child: RaisedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, HomeScreen.id);
-                },
-                elevation: 10.0,
-                child: Text(
-                  "Login",
-                  style: TextStyle(color: Colors.white, fontSize: 20.0),
-                ),
-                color: Colors.blue[900],
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30.0))),
+              onPressed: () {
+                Navigator.pushNamed(context, HomeScreen.id);
+              },
+              elevation: 10.0,
+              child: Text(
+                "Login",
+                style: TextStyle(color: Colors.white, fontSize: 20.0),
+              ),
+              color: Colors.blue[900],
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30.0),
+              ),
+            ),
           ),
         ],
       ),

@@ -1,8 +1,8 @@
-import 'package:Fooduko/constants.dart';
-import 'package:Fooduko/screens/home_screen.dart';
-import 'package:Fooduko/screens/login_screen.dart';
-import 'package:Fooduko/screens/signup_screen.dart';
-import 'package:Fooduko/screens/welcome_screen.dart';
+import 'package:fooduko/constants.dart';
+import 'package:fooduko/screens/home_screen.dart';
+import 'package:fooduko/screens/login_screen.dart';
+import 'package:fooduko/screens/signup_screen.dart';
+import 'package:fooduko/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'screens/welcome_screen.dart';
 

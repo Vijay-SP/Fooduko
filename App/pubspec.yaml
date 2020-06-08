@@ -1,4 +1,4 @@
-name: Fooduko
+name: fooduko
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -66,9 +66,9 @@ flutter:
         - asset: fonts/Poppins-Regular.ttf
         - asset: fonts/Poppins-Bold.ttf
   #         style: italic
-    - family: Piedra
+    - family: ArchitectsDaughter
       fonts:
-        - asset: fonts/Piedra-Regular.ttf
+        - asset: fonts/ArchitectsDaughter-Regular.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
