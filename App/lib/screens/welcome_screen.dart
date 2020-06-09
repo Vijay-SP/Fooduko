@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fooduko/screens/signup_screen.dart';
 import 'login_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
@@ -43,7 +44,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               Text(
                 "Food",
                 style: TextStyle(
-                  color: Colors.lightGreenAccent,
+                  color: Colors.pinkAccent,
                   fontSize: 30,
                   fontWeight: FontWeight.w700,
                 ),
@@ -51,7 +52,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               Text(
                 "That Awaits You !",
                 style: TextStyle(
-                  color: Color(0xffF16750),
+                  color: Colors.lightGreenAccent,
                   fontSize: 24,
                   fontWeight: FontWeight.w700,
                 ),
@@ -92,7 +93,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 height: 50.0,
                 child: RaisedButton(
                     onPressed: () {
-//                        Navigator.pushNamed(context, LoginScreen.id);
+                       Navigator.pushNamed(context, SignupScreen.id);
                     },
                     elevation: 10.0,
                     child: Text(
