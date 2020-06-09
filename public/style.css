@@ -437,7 +437,6 @@ header ul li a:hover {
     .testimonials .container .contentbox p {
         font-size: 15px;
     }
-<<<<<<< HEAD
     
     .terms{
 		margin: 0;
@@ -445,12 +444,10 @@ header ul li a:hover {
         right:35%;
 		top:10%;
 	}
-}
-=======
+
     .terms {
         margin: 0;
         position: absolute;
         left: 28%;
     }
 }
->>>>>>> 6dc048216c2c7bf7ede7e98237291d0e222edfa1
