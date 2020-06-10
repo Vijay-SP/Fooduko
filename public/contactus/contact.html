@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel='stylesheet' href='style-contact.css' />
+   <script type="text/javascript">
+        function toggle() {
+            var head = document.getElementById("header")
+            head.classList.toggle('active')
+        }
+    </script>
+</head>
+<body>
+<header id="header">
+        <a href="../index.html" class="logo"> FOODUKO </a>
+        <ul>
+            <li><a href="../index.html"> Home </a></li>
+            <li><a href="../Categories.html"> Categories </a></li>
+            <li><a href="../FoodFacts.html"> FoodFacts </a></li>
+            <li><a href="../Recipes.html"> Recipes </a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+  <div class="contain">
+    <div class="food">
+      <div class="masala">
+	     <span class="spicy"></span>
+		 <span class="spicy"></span>
+		 <span class="spicy"></span>
+		 <span class="spicy"></span>
+        <div class="gravy">
+            <h1>Contact Us</h1>
+          <div class="container">
+            <form action="https://formspree.io/xoqkwevg"  method="POST" id="contactForm">
+              <div class="input-field">
+                <input type="text" name="name" id="name" class="form-control"  required>
+				<label for="name">Full Name</label>
+				<span></span>
+              </div>
+              <div class="input-field">
+                <input type="email" name="email" id="email" class="form-control" required>
+				<label for="email">E-Mail ID</label>
+				<span></span>
+              </div>
+              <div class="input-field">
+                <input type="text" name="phone" id="phone" class="form-control"  required>
+				<label for="subject">Phone No.</label>
+				<span></span>
+              </div>
+              <div class="input-field">
+                
+                <input type="text" name="message" id="message" rows="5" class="form-control" required>
+				  <label for="message">Message</label>
+				  <span></span>
+              </div>
+              <div class="btn">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+                <input type="submit" name="submit" value="submit" class="btn btn-danger btn-block" id="submit">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
