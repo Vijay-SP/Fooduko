@@ -265,7 +265,7 @@ header ul li a:hover {
         transform: translateY(-100%);
     }
     header.active ul {
-        top: 70px;
+        top: 90px;
         transform: translateY(0);
     }
     header ul li a {
@@ -277,7 +277,7 @@ header ul li a:hover {
         display: block;
         position: relative;
         width: 30px;
-        height: 30px;
+        height: 50px;
         cursor: pointer;
     }
     .toggle::before {
