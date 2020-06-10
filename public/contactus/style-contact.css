@@ -355,6 +355,11 @@ background:#03e9f4;
 }
 
 @media( max-width:991px) {
+	body{
+		background:url("../Images/bg-res.jpg") no-repeat;
+		background-size: 450px 830px;
+	}
+	
     header .logo {
         padding: 10px;
     }
