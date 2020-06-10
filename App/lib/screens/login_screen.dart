@@ -53,7 +53,6 @@ class LoginScreen extends StatelessWidget {
               ),
               decoration: InputDecoration(
                 labelText: 'UserName/Email',
-//                labelStyle: TextStyle(color: Colors.blue[800]),
                 hintText: 'FoodWithFooduko@gmail.com',
                 hintStyle: TextStyle(fontSize: 15),
                 contentPadding:
@@ -95,7 +94,6 @@ class LoginScreen extends StatelessWidget {
               ),
               decoration: InputDecoration(
                 labelText: 'Password',
-//                labelStyle: TextStyle( color: Colors.[800]),
                 hintText: 'Type your Password here',
                 hintStyle: TextStyle(fontSize: 15),
                 contentPadding:
