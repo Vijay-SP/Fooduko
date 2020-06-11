@@ -109,7 +109,7 @@ header ul li a {
     border: 2px solid ;
 }
 
-li a:hover {
+/* li a:hover {
     -moz-border-radius-topleft: 10px;
     -moz-border-radius-topright: 10px;
     -moz-border-radius-bottomright: 10px;
@@ -124,7 +124,7 @@ header ul li a:hover {
     width: 200px;
     height: 44px;
     transition:0.2s;
-}
+} */
 
 .terms {
     text-align: right;
