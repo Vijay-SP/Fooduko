@@ -125,6 +125,35 @@ header ul li a:hover {
     font-size: 20px;
 }
 
+.back-opt a {
+    justify-content: space-around;
+    margin: 100px 0px;
+    padding: 0em 1em;
+    height: 60px;
+    width: 100px;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.back-opt a:hover {
+    animation: animate10 1.5s linear infinite;
+}
+
+@keyframes animate10 {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
 @media( max-width:991px) {
     header ul {
         position: absolute;
@@ -186,6 +215,8 @@ header ul li a:hover {
         bottom: 14px;
         transform: rotate(-45deg);
     }
+
+
 }
 
 @media( max-width:575px) {
@@ -206,5 +237,8 @@ header ul li a:hover {
     }
     .sub-category_recipe {
         font-size: 15px;
+    }
+    .back-opt a{
+        font-size: 16px;
     }
 }
