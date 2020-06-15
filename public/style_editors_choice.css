@@ -185,13 +185,32 @@ header ul li a:hover {
     }
     .list_items {
         padding-left: 25px;
-        font-size: 15px;
+        font-size: 10px;
     }
     .info .contentbox {
         width: 100%;
     }
     .info .contentbox ul{
         padding: 5px;
+    }
+    .headline{
+        font-size: 20px;
+    }
+    .sub-category_recipe li ol li {
+        font-size: 15px;
+    }
+    
+    .sub-category_heading {
+        font-size: 25px;
+        color: #4B61D1;
+    }
+    
+    .sub_category_text {
+        font-size: 15px;
+    }
+    
+    .headline {
+        font-size: 20px;
     }
 }
 
