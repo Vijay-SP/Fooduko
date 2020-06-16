@@ -446,4 +446,18 @@ header ul li a:hover {
         position: absolute;
         left: 28%;
     }
+
+    .tbt1{
+        height: 200px;
+        width:180px;
+    }
+
+    .tbt2{
+        height: 200px;
+        width:180px;
+    }
+
+    .btn button{
+        margin-left: 50px;
+    }
 }
