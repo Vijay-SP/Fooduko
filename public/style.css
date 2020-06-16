@@ -458,8 +458,10 @@ header ul li a:hover {
         position: relative;
         font-size: 10px;
     }
+
     .creator_names {
         color: turquoise;
         font-size: 13px;
     }
 }
+
