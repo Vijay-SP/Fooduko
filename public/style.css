@@ -74,7 +74,7 @@ header ul {
     display: flex;
     justify-content: center;
     align-items: center;
-	left:15%;
+    left: 15%;
 }
 
 header ul li {
@@ -96,13 +96,12 @@ header ul li a {
     transition: 0.6s;
 }
 
-.term-contact{
-	margin:0;
-	position:relative;
-	width:200px;
-	left: 40%;
+.term-contact {
+    margin: 0;
+    position: relative;
+    width: 200px;
+    left: 40%;
 }
-
 
 /* li a:hover {
     -moz-border-radius-topleft: 10px;
@@ -134,7 +133,7 @@ header ul li a:hover {
     border-radius: 5px;
     padding: 0em 1em;
     transition: 0.3s;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 .terms a:active {
@@ -238,7 +237,7 @@ header ul li a:hover {
     padding: 60px;
     background: rgb(255, 87, 87);
     margin-top: -200px;
-    padding-top: 300px;
+    padding-top: 200px;
     justify-content: space-between;
     align-items: center;
 }
@@ -247,7 +246,7 @@ header ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 0px;
     flex-wrap: wrap;
 }
 
@@ -255,7 +254,7 @@ header ul li a:hover {
     background: #fff;
     width: 500px;
     height: 250px;
-    padding: 50px 80px;
+    padding: 35px 35px;
     margin-top: 50px;
     justify-content: center;
     text-align: left;
@@ -302,6 +301,16 @@ header ul li a:hover {
     background: black;
     padding: 50px;
     text-align: center;
+}
+
+.terms {
+    margin: 0;
+    position: relative;
+}
+
+.creator_names {
+    color: turquoise;
+    font-size: 18px;
 }
 
 @media( max-width:991px) {
@@ -369,6 +378,7 @@ header ul li a:hover {
         transform: rotate(-45deg);
     }
     .Banner {
+        margin: 0px;
         padding: 30px;
         width: 100%;
     }
@@ -384,6 +394,13 @@ header ul li a:hover {
     .Banner .content p {
         font-size: 16px;
     }
+    .heading{
+        font-size: 25px;
+    }
+    .categories .heading_categories{
+        font-size: 25px;
+    }
+    
     .about {
         position: relative;
         width: 100%;
@@ -400,12 +417,14 @@ header ul li a:hover {
         background-size: cover;
         background-position: bottom;
     }
-    .about .contentbox,
-    .about .imagebox {
+    .about .contentbox, .about .imagebox {
         width: 100%;
         padding: 50px;
         min-height: 400px;
         text-align: center;
+    }
+    .aboutus .text {
+        font-size: 15px;
     }
     .categories {
         padding: 30px;
@@ -420,10 +439,11 @@ header ul li a:hover {
         height: 350px;
     }
     .testimonials {
-        padding-top: 170px;
+        padding-top: 50px;
+    margin-top: 0px;
     }
     .testimonials .container .contentbox {
-        padding: 30px 40px;
+        padding: 15px 40px;
         max-width: 550px;
         margin-bottom: 40px;
     }
@@ -433,31 +453,15 @@ header ul li a:hover {
     .testimonials .container .contentbox p {
         font-size: 15px;
     }
-    
-    .terms{
-		margin: 0;
-		position: relative;
-        right:35%;
-		top:10%;
-	}
-
     .terms {
         margin: 0;
-        position: absolute;
-        left: 28%;
+        position: relative;
+        font-size: 10px;
     }
 
-    .tbt1{
-        height: 200px;
-        width:180px;
-    }
-
-    .tbt2{
-        height: 200px;
-        width:180px;
-    }
-
-    .btn button{
-        margin-left: 50px;
+    .creator_names {
+        color: turquoise;
+        font-size: 13px;
     }
 }
+
