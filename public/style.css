@@ -443,7 +443,7 @@ header ul li a:hover {
     margin-top: 0px;
     }
     .testimonials .container .contentbox {
-        padding: 15px 40px;
+        padding: 20px 20px;
         max-width: 550px;
         margin-bottom: 40px;
     }
@@ -462,6 +462,10 @@ header ul li a:hover {
     .creator_names {
         color: turquoise;
         font-size: 13px;
+    }
+
+    .subscript{
+        font-size: 12px;
     }
 }
 
