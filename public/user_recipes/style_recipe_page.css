@@ -215,6 +215,10 @@ header ul li a:hover {
         bottom: 14px;
         transform: rotate(-45deg);
     }
+	.y-video{
+		width:310px;
+		height:170px;
+	}
 
 
 }
