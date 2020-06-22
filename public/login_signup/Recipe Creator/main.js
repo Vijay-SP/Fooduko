@@ -90,32 +90,64 @@ if (createForm != null) {
     });
 }
 
-const docRef = firestore.collection("posts");
-console.log(docRef);
-const loadButton = document.querySelector("#load");
-const postName = document.querySelector("#postName");
-const imageRecipe = document.querySelector("#imageRecipe");
-loadButton.addEventListener("click", function () {
-    docRef.get().then(function (doc){
-        if(doc && doc.exists){
-            const myData = doc.data();
-            postName.innerHTML = myData.title;
-            console.log("Image url:" + myData.image);
-            imageRecipe.src = myData.image;
-        }
-    }).catch(function (e){
-        console.log("ERROR !!!!!!!!!!!!!!" + e);
-    })
-});
+const recipeList = document.querySelector("#recipeList");
 
-getRealTimeUpdates = function(){
-    docRef.onSnapshot(function (doc){
-        if(doc && doc.exists){
-            const myData = doc.data();
-            postName.innerHTML = myData.title;
-            imageRecipe.src = myData.image;
-        }
-    });
+function recipe(doc) {
+    let li = document.createElement('li');
+    let content = document.createElement('span');
+    let fileref = document.createElement('span');
+    let image = document.createElement('img');
+    let title = document.createElement('span');
+
+
+    li.setAttribute('dataId', doc.id);
+    content.textContent = doc.data().content;
+    fileref.textContent = doc.data().fileref;
+    image.src = doc.data().image;
+    title.textContent = doc.data().title;
+
+    li.appendChild(content);
+    li.appendChild(fileref);
+    li.appendChild(title);
+    li.appendChild(image);
+
+    recipeList.appendChild(li);
 }
 
-getRealTimeUpdates();
+const docRef = firestore.collection("posts");
+// const docRef = firestore.doc("posts/QB0ShyP1mLLFdoqwu5sh");
+docRef.get().then((snapshot) => {
+    snapshot.docs.forEach(doc => {
+        recipe(doc);
+        console.log(doc.data);
+    });
+});
+
+// console.log(docRef);
+// const loadButton = document.querySelector("#load");
+// const postName = document.querySelector("#postName");
+// const imageRecipe = document.querySelector("#imageRecipe");
+// loadButton.addEventListener("click", function () {
+//     docRef.get().then(function (doc){
+//         if(doc && doc.exists){
+//             const myData = doc.data();
+//             postName.innerHTML = myData.title;
+//             console.log("Image url:" + myData.image);
+//             imageRecipe.src = myData.image;
+//         }
+//     }).catch(function (e){
+//         console.log("ERROR !!!!!!!!!!!!!!" + e);
+//     })
+// });
+
+// getRealTimeUpdates = function(){
+//     docRef.onSnapshot(function (doc){
+//         if(doc && doc.exists){
+//             const myData = doc.data();
+//             postName.innerHTML = myData.title;
+//             imageRecipe.src = myData.image;
+//         }
+//     });
+// }
+
+// getRealTimeUpdates();
