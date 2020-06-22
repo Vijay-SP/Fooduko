@@ -5,29 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="main.js"> -->
+    <link rel="stylesheet" href="create.css">
     <title>Create Recipe</title>
 </head>
 
 <body>
 
     <main id="main">
-        <form action="" method="post" id="createForm">
-            <input type="text" id="title" placeholder="Recipe Name">
-            <textarea id="content" placeholder="Post Content"></textarea>
+        <form method="post" id="createForm">
+            <input type="text" id="userName" placeholder="Full Name">          <!-- Full Name -->
+            <br>
+            <br>
+            <input type="text" id="email" placeholder="Email ID">              <!-- Email ID-->
+            <br>
+            <br>
+            <input type="text" id="phoneNo" placeholder="Phone Number">        <!-- Phone No-->
+            <br>
+            <br>
+            <input type="text" id="recipeName" placeholder="Recipe Name">      <!-- Recipe Name-->
+            <br>
+            <br>
+            <textarea id="ingredients" placeholder="Ingredients"></textarea>  <!-- Ingredients-->
+            <br>
+            <br>
+            <textarea id="recipeContent" placeholder="Recipe"></textarea>     <!-- Recipe Content-->
+            <br>
+            <br>
             <input type="file" id="image">
+            <br>
+            <br>
             <input type="submit" value="Submit" id="submitRecipe">
-
+            <br>
+            <br>
         </form>
 
         <div id="progessHandler">
             <p>Processing please wait....</p>
             <progress id="progressBar" value="" max="100"></progress>
         </div>
-
-        <button id="load"> Load </button>
-
-        <ul id="recipeList"></ul>
-
         <!-- <h1 id="postName">  </h1> -->
 
         <!-- <img id="imageRecipe" src="test" width="500px" height="300px"> -->

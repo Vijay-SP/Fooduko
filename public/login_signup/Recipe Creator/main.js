@@ -21,11 +21,20 @@ if (createForm != null) {
     let d;
     createForm.addEventListener("submit", async (e) => {
         e.preventDefault();
-        if (document.getElementById("title").value != "" && document.getElementById("content").value != ""
-            && document.getElementById("image").files[0] != "") {
+        if (document.getElementById("userName").value != ""  && 
+            document.getElementById("email").value != "" &&
+            document.getElementById("phoneNo").value != "" &&
+            document.getElementById("recipeName").value != "" &&
+            document.getElementById("ingredients").value != "" &&
+            document.getElementById("recipeContent").value != "" &&
+            document.getElementById("image").files[0] != "") {
 
-            let title = document.getElementById("title").value;
-            let content = document.getElementById("content").value;
+            let userName = document.getElementById("userName").value;
+            let email = document.getElementById("email").value;
+            let phoneNo = document.getElementById("phoneNo").value;
+            let recipeName = document.getElementById("recipeName").value;
+            let ingredients = document.getElementById("ingredients").value;
+            let recipeContent = document.getElementById("recipeContent").value;
             let image = document.getElementById("image").files[0];
 
             console.log(image);
@@ -37,7 +46,7 @@ if (createForm != null) {
 
             const postImage = storageChild.put(image);
 
-            await new Promise((resolve) => {
+            await new Promise ((resolve) => {
                 postImage.on("state_changed", (snapshot) => {
 
                     let progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
@@ -67,19 +76,23 @@ if (createForm != null) {
             });
 
             const fileRef = await firebase.storage().refFromURL(d);
-            let post = {
-                title,
-                content,
+            let recipe = {
+                userName: userName,
+                email: email,
+                phoneNo:phoneNo,
+                recipeName: recipeName,
+                ingredients:ingredients,
+                recipeContent:recipeContent,
                 image: d,
                 fileref: fileRef.location.path, //image.jpg
             }
 
-            await firebase.firestore().collection("posts").add(post);
+            await firebase.firestore().collection("User Recipes").doc(recipeName+"_"+userName).set(recipe);
 
-            console.log("post added");
+            // alert("Recipe Added");
 
             if (submit != null) {
-                // window.location.replace("index.html");
+                window.location.replace("recipe.html");
                 submit.disabled = false;
             }
 
@@ -90,38 +103,42 @@ if (createForm != null) {
     });
 }
 
-const recipeList = document.querySelector("#recipeList");
+// const recipeList = document.querySelector("#recipeList");
 
-function recipe(doc) {
-    let li = document.createElement('li');
-    let content = document.createElement('span');
-    let fileref = document.createElement('span');
-    let image = document.createElement('img');
-    let title = document.createElement('span');
+// function recipe(doc) {
+//     let li = document.createElement('li');
+//     let content = document.createElement('span');
+//     let fileref = document.createElement('span');
+//     let image = document.createElement('img');
+//     let title = document.createElement('h1');
+//     title.id = "title";
+//     let breakLine = document.createElement('br');
 
+//     li.setAttribute('dataId', doc.id);
+//     content.textContent = doc.data().content;
+//     fileref.textContent = doc.data().fileref;
+//     image.src = doc.data().image;
+//     title.textContent = doc.data().title;
+    
+//     li.appendChild(title);
+//     li.appendChild(breakLine);
+//     li.appendChild(content);
+//     li.appendChild(breakLine);
 
-    li.setAttribute('dataId', doc.id);
-    content.textContent = doc.data().content;
-    fileref.textContent = doc.data().fileref;
-    image.src = doc.data().image;
-    title.textContent = doc.data().title;
+//     // li.appendChild(fileref);
+//     li.appendChild(image);
 
-    li.appendChild(content);
-    li.appendChild(fileref);
-    li.appendChild(title);
-    li.appendChild(image);
+//     recipeList.appendChild(li);
+// }
 
-    recipeList.appendChild(li);
-}
-
-const docRef = firestore.collection("posts");
-// const docRef = firestore.doc("posts/QB0ShyP1mLLFdoqwu5sh");
-docRef.get().then((snapshot) => {
-    snapshot.docs.forEach(doc => {
-        recipe(doc);
-        console.log(doc.data);
-    });
-});
+// const docRef = firestore.collection("posts");
+// // const docRef = firestore.doc("posts/QB0ShyP1mLLFdoqwu5sh");
+// docRef.get().then((snapshot) => {
+//     snapshot.docs.forEach(doc => {
+//         recipe(doc);
+//         console.log(doc.data);
+//     });
+// });
 
 // console.log(docRef);
 // const loadButton = document.querySelector("#load");
