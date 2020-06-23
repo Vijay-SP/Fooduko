@@ -19,15 +19,16 @@ const recipeList = document.querySelector("#recipeList");
 function recipe(doc) {
     let li = document.createElement('li');
 
-    let userName = document.createElement('i')
+    let userName = document.createElement('i');
+    userName.id = "userName";
     let recipeName = document.createElement('h1');
-    recipeName.id = "title";
+    recipeName.id = "recipeName";
     let image = document.createElement('img');
     image.id = "image"
     let ingredients = document.createElement('p');
+    ingredients.id = "ingredients";
     let recipeContent = document.createElement('p');
-    // let fileref = document.createElement('span');
-    
+    recipeContent.id = "recipeContent";    
     let breakLine = document.createElement('br');
 
     li.setAttribute('dataId', doc.id);
@@ -36,9 +37,6 @@ function recipe(doc) {
     image.src = doc.data().image;
     ingredients.textContent = doc.data().ingredients;
     recipeContent.textContent = doc.data().recipeContent;
-    // fileref.textContent = doc.data().fileref;
-
-
     
     li.appendChild(recipeName);
     li.appendChild(breakLine);
@@ -56,9 +54,7 @@ function recipe(doc) {
     li.appendChild(breakLine);
     li.appendChild(breakLine);
     li.appendChild(breakLine);
-
-    // li.appendChild(fileref);
-
+    
     recipeList.appendChild(li);
 }
 
